@@ -637,7 +637,7 @@ class CTask extends CDpObject
 			$ret = db_insertObject('tasks', $this, 'task_id');
 			addHistory('tasks', $this->task_id, 'add', $this->task_name, $this->task_project);
 
-			if (!empty($this->task_parent)) {  // should avoid throwing a warning (gwyneth 20210425)
+			if (empty($this->task_parent)) {  // should avoid throwing a warning (gwyneth 20210425)
 				$q->addTable('tasks');
 				$q->addUpdate('task_parent', $this->task_id);
 				$q->addWhere('task_id = ' . $this->task_id);
