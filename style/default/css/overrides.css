@@ -35,3 +35,8 @@
 .ql-align-justify {
   text-align: justify;
 }
+
+.ql-toolbar,
+.ql-container {
+    background: #ffffff;
+}
