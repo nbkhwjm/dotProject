@@ -230,7 +230,7 @@
   background-color: #434c5e; /* nord2 */
 }
 .ql-toolbar.ql-snow .ql-picker-options {
-  box-shadow: rgba(45,52,64,0.6); 0 2px 8px;
+  box-shadow: rgba(45,52,64,0.6) 0 2px 8px;
 }
 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
   border-color: #81a0c1; /* nord9 */
