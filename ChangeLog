@@ -1,3 +1,51 @@
+commit cf4bc0abd8d5f98d6f4f1adcc9710900d55a08d7
+Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
+Date:   Mon Oct 28 03:33:14 2024 +0000
+
+    Fixed commit with PR,, new version ready for citting
+
+commit 48690dffd5fb8e90e8deb999de6e533a039b1458
+Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
+Date:   Mon Oct 28 02:37:09 2024 +0000
+
+    Current version of ESlint dislikes `es2021`l
+
+commit 5e4e34c6925aff2da978a20fb6806bd4e0333ca4
+Merge: 4e170bb 8916a54
+Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
+Date:   Mon Oct 28 02:26:50 2024 +0000
+
+    Merge pull request #1 from JacobDB/devel
+    
+    Fix minor bugs
+
+commit 4e170bbdf665ff4be842aed615be3f624e237f46
+Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
+Date:   Mon Oct 28 02:00:38 2024 +0000
+
+    Create php.yml
+    
+    Attempt to add GitHub's own CI tools for dotProject
+
+commit e802ebda6bb226a6110aff45c7176bf310d6f31c
+Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
+Date:   Sun Oct 27 10:18:52 2024 +0000
+
+    Updated ChangeLog
+    The one I has was strangely way larger… not that this is really relevant: `git log` does the thing.
+
+commit 8916a5476878bbc97bdb2d1b24ed707f3204d259
+Author: Jacob Bearce <jacob@bearce.me>
+Date:   Tue Aug 22 10:15:22 2023 -0500
+
+    Fix issue that caused task parent to be unset at creation
+
+commit ef5b1a497b6b4b9bfe2abcd664b79f017fc854c6
+Author: Jacob Bearce <jacob@bearce.me>
+Date:   Tue Aug 22 10:14:54 2023 -0500
+
+    Fix background color on WYSIWYGs
+
 commit 90a8f14122f418e773af0cfa27ed01383b811121
 Author: Gwyneth Llewelyn <gwyneth.llewelyn@gwynethllewelyn.net>
 Date:   Tue Oct 18 20:58:56 2022 +0100
