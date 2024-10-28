@@ -4,6 +4,7 @@
  *
  **/
 
+.ql-toolbar,
 .ql-container {
   font-family: Inter, Sans-Serif;
   font-weight: normal;
@@ -68,7 +69,7 @@
   color: #b48ead;
 }
 .ql-editor .ql-font-serif {
-  font-family: Georgia, serif;
+  font-family: Inter, Georgia, serif;
 }
 .ql-editor .ql-font-monospace {
   font-family: "Fira Code", monospace;
