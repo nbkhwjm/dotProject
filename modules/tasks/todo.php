@@ -91,7 +91,7 @@ if (is_array($selected) && count($selected)) {
 			$q->addWhere('task_id='.$val);
 		}
 		db_exec($q->prepare(true));
-		echo db_error();		
+		echo db_error();
 	}
 }
 
@@ -134,7 +134,7 @@ if ($showPinned) {
 	$q->addWhere('task_pinned = 1');
 }
 if (!$showEmptyDate) {
-	$q->addWhere("ta.task_start_date != '' AND ta.task_start_date != '0000-00-00 00:00:00'");
+	$q->addWhere("ta.task_start_date IS NOT NULL AND ta.task_start_date != '0000-00-00 00:00:00'");
 }
 
 
@@ -156,13 +156,13 @@ $q->clear();
 global $tasks;
 $tasks = db_loadList($sql);
 
-/* we have to calculate the end_date via start_date+duration for 
-** end='0000-00-00 00:00:00' 
+/* we have to calculate the end_date via start_date+duration for
+** end='0000-00-00 00:00:00'
 */
 for ($j=0, $xj=count($tasks); $j < $xj; $j++) {
-		
+
 	if ($tasks[$j]['task_end_date'] == '0000-00-00 00:00:00' || $tasks[$j]['task_end_date'] == '') {
-		if ($tasks[$j]['task_start_date'] == '0000-00-00 00:00:00' 
+		if ($tasks[$j]['task_start_date'] == '0000-00-00 00:00:00'
 		    || $tasks[$j]['task_start_date'] == '') {
 			//just to be sure start date is "zeroed"
 			$tasks[$j]['task_start_date'] = '0000-00-00 00:00:00';
@@ -201,8 +201,8 @@ if ($m == 'tasks' && $a == 'todo') {
 	$tabBox->add('tasks/todo_tasks_sub', 'My Tasks');
 	$tabBox->add('tasks/todo_gantt_sub', 'My Gantt');
 	// Wouldn't it be better to user $tabBox->loadExtras('tasks', 'todo'); and then
-	// add tasks_tab.todo.my_open_requests.php in helpdesk?  
-	if ($AppUI->isActiveModule('helpdesk')) { 
+	// add tasks_tab.todo.my_open_requests.php in helpdesk?
+	if ($AppUI->isActiveModule('helpdesk')) {
 		$tabBox->add('helpdesk/vw_idx_my', 'My Open Requests');
 	}
 	$tabBox->show();
