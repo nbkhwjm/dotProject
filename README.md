@@ -1,11 +1,9 @@
+![dotProject Logo](style/nord/images/favicons/android-chrome-96x96.png)
 # dotProject
-
-dotProject is an open source project management system written in PHP.
+**dotProject** is an open source project management system written in PHP.
 
 It originally started in 2001 by dotMarketing on SourceForge and has
 been under the watchful eye of the current dotProject team since around December 2002.
-
-(This is Gwyneth Llewelyn's fork, to provide PHP 8.0 support and a few extra goodies.)
 
 ## Installing/Upgrading
 
