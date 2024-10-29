@@ -1,11 +1,15 @@
+![dotProject Logo](style/nord/images/favicons/android-chrome-96x96.png)
 # dotProject
-
-dotProject is an open source project management system written in PHP.
+**dotProject** is an open source project management system written in PHP.
 
 It originally started in 2001 by dotMarketing on SourceForge and has
 been under the watchful eye of the current dotProject team since around December 2002.
 
-(This is Gwyneth Llewelyn's fork, to provide PHP 8.0 support and a few extra goodies.)
+## Disclaimer
+
+This is [Gwyneth Llewelyn](https://github.com/GwynethLlewelyn)'s fork, to provide PHP 8.0+ support and a few extra goodies. While I maintain a separate list of issues, these are strictly related to this fork, and not to the overall dotProject code, which is officially maintained by the community.
+
+The only reason for this fork to exist is because many need full PHP 8.0+ support (now that even 7.4 reached EOL), including, of course, myself. This fork is solely kept as an ongoing PR to the main development branch of dotProject, where hopefully it will be integrated at some point in time.
 
 ## Installing/Upgrading
 
