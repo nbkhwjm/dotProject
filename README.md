@@ -1,6 +1,6 @@
+![dotProject Logo](style/nord/images/favicons/android-chrome-96x96.png)
 # dotProject
-
-dotProject is an open source project management system written in PHP.
+**dotProject** is an open source project management system written in PHP.
 
 It originally started in 2001 by dotMarketing on SourceForge and has
 been under the watchful eye of the current dotProject team since around December 2002.
@@ -19,13 +19,13 @@ Bug reports and other issues can be lodged on GitHub at https://github.com/dotpr
 
 ## License
 
-As of version 2.0, dotProject is released under GPL.
+As of version 2.0, dotProject is released under [GPL](LICENSE.md).
 1.0.2 and previous versions were released under BSD license.
 Parts of dotProject include libraries from other projects which are used and re-released under their original licence.
 
 ## Docker composer support
 
-The latest devel branch now includes a simple docker-compose.yml file and support files.  These will allow you to run dotProject by running:
+The latest devel branch now includes a simple `docker-compose.yml` file and support files.  These will allow you to run dotProject by running:
 
 `docker-compose up`
 
